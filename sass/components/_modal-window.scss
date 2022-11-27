@@ -1,0 +1,201 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+  
+    transform: scale(1);
+    transition: opacity 250ms, visibility 250ms;
+  }
+  .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .modal {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+  .close-btn-icon {
+    fill: currentColor;
+  }
+ 
+  .modal-title {
+    text-align: center;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-title {
+    margin-bottom: 12px;
+  }
+  
+  .form-field {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .form-input {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 12px 42px;
+    border: none;
+    outline: transparent;
+    color: #212121;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form-field:focus-within > .form-input {
+    border-color: #2196f3;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  .form-icon {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+    display: inline-block;
+    fill: currentColor;
+   
+  }
+  .form-field:focus-within > .form-icon {
+    color: #2196f3;
+  }
+  .form-message {
+    border: none;
+    outline: transparent;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    font-weight: 400;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+        border-color: #2196f3;
+      }
+  }
+
+  .form-agreement {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+  }
+  .form-agreement-text {
+    user-select: none;
+  }
+  .form-agreement-link {
+    margin-left: 7px;
+    color: #2196f3;
+  }
+  .form-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    outline: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    
+    &:checked {
+        background-color: #2196f3;
+        border-color: transparent;
+      }
+  }
+ 
+  .form-btn {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 52px;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 712px;
+    cursor: pointer;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    text-align: center;
+    display: block;
+    align-items: center;
+    color: var(--general-color);
+    background: var(--brand-color);
+    border-color: transparent;
+    border-radius: 4px;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+ 

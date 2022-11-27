@@ -1,0 +1,166 @@
+.page-footer {
+  
+    background: #2f303a;
+    padding: 60px 0;
+    height: 252px;
+  }
+  .logo-footer {
+    display: block;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+  }
+  .footer-block {
+    display: flex;
+    align-items: baseline;
+  }
+  .last-part-footer {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--general-color);
+  }
+  address {
+    margin-top: 20px;
+  }
+  .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--general-color);
+  }
+  .mail-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-tel-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-icon {
+    margin-left: 70px;
+  }
+  .block-text {
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+  }
+ 
+  .footer-socials-icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: #ffffff;
+  }
+  .footer-form {
+    margin-left: 93px;
+  }
+  .footer-form-text {
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .footer-form-block {
+    position: relative;
+    display: flex;
+    
+  }
+  .footer-form-field {
+    display: block;
+    width: 358px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-form-input {
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2784px;
+    padding: 15px 16px;
+    color: #ffffff;
+    background: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+  
+  .footer-form-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2196f3;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    font-family: inherit;
+    font-style: normal;
+    letter-spacing: inherit;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: transparent;
+    margin-left: 12px;
+    gap: 10px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: #188ce8;
+  }
+  }
+  

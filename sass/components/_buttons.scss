@@ -1,0 +1,98 @@
+.hero-btn {
+    display: inline-block;
+    padding: 10px 32px;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+
+    color: var(--general-color);
+    background: var(--brand-color);
+    border-color: transparent;
+    border-radius: 4px;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto;
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+  }
+
+  .footer-form-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2196f3;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    font-family: inherit;
+    font-style: normal;
+    letter-spacing: inherit;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: transparent;
+    margin-left: 12px;
+    gap: 10px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: #188ce8;
+  }
+  }
+
+  .button-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .list-btn {
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    background-color: #f5f4fa;
+  
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  }
+  .filtr-btn:not(:last-child) {
+    margin-right: 8px;
+  }
