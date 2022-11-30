@@ -521,9 +521,6 @@ ul {
 }
 
 .list-our {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
   padding: 60px 0 0;
 }
 @media screen and (min-width: 768px) {
@@ -798,9 +795,6 @@ ul {
 }
 
 .our-clients {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
   padding: 60px 0 0;
 }
 
@@ -809,48 +803,65 @@ ul {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 
-@media scree and (min-width: 480px) {
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+@media screen and (min-width: 480px) {
   .clients {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 30px;
   }
 }
 
 .clients__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 210px;
+  height: 92px;
 }
-@media scree and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .clients__item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 30px;
-    width: 210px;
+    width: 226px;
   }
-  .clients__item__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
   }
 }
 
