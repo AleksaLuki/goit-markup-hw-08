@@ -1,8 +1,9 @@
 .our-clients {
   @include container;
   
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding: 60px 0 0;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
   }
   .clients-title {
     margin-bottom: 50px;
@@ -16,18 +17,33 @@
     color: #212121;
   }
   .clients {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 30px;
+    @media scree and (min-width: 480px) {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 30px;
+    }
   }
   .clients__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
+    // width: 170px;
+    // height: 92px;
+    @media scree and (min-width: 480px) {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 30px;
+      width: 210px;
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+   
   }
+}
   .clients__link {
     display: flex;
     align-items: center;
