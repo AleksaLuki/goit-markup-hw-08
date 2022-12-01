@@ -1,6 +1,6 @@
 
 .hero {
-  
+ 
     padding-top: 200px;
     padding-bottom: 200px;
     margin-left: auto;
@@ -13,21 +13,76 @@
     background-repeat: no-repeat;
     background-size: cover;
     outline: 1px solid black;
-    background-image: linear-gradient(
+   
+     @media screen and (max-width: 767.98px) {
+      // mob screen
+      background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/newphoto.jpg);
+      ), url(../images/img_bgs@1x.jpg); 
+     
+     // mob screen retina
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 129dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/img_bgs@2x.jpg);
+      }
+    }
+  
+    @media screen and (min-width: 768px) {
+      // tabl screen
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/img_bgm@1x.jpg); 
+     
+     // tabl screen retina
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 129dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/img_bgm@2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      // desc screen
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/img_bgl@1x.jpg); 
+     
+     // desc screen retina
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 129dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/img_bgl@2x.jpg);
+      }
+    }
   }
   .hero-name {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    font-size: 26px;
+    line-height: calc(42 / 26);
     color: var(--general-color);
     text-align: center;
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto 30px;
+
+      @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      max-width: 696px;
+    } 
   }
   .hero-btn {
     display: inline-block;
