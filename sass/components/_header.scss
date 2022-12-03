@@ -1,9 +1,13 @@
-.header {
-  // @include container; 
-  
+
+  .header {
     background-color: #ffffff;
     border-bottom: 1px solid #ececec;
   }
+  @media screen and (max-width: 767.98px) {
+    .header-nav {
+      display: none;
+    }
+    }
 .logo {
     display: block;
     margin-right: 93px;
