@@ -62,6 +62,11 @@
             transform: translateX(0);
   }
   
+  @media (min-width: 768px) {
+    .menu-container {
+      display: none;
+    }
+  }
   .menu-toggle {
     color: #212121;
   }
