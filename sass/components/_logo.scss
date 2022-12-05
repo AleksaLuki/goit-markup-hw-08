@@ -1,6 +1,5 @@
 .logo {
     display: block;
-    margin-right: 93px;
     text-decoration: none;
     font-family: var(--secondary-font);
     font-style: normal;
@@ -11,6 +10,9 @@
 
     @media screen and (min-width: 768px) {
       margin-right: 88px; }  
+
+     @media screen and (min-width: 1200px) {
+        margin-right: 93px; } 
   }
 
   .first-part,
