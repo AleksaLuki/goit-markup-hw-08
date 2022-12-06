@@ -560,7 +560,8 @@ ul {
 }
 
 .list-our {
-  padding: 60px 0 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .list-our__item {
@@ -658,6 +659,7 @@ ul {
 
 .about-us {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .about-title {
@@ -727,24 +729,56 @@ ul {
 
 .comand {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .comand {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .about-title-comand {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   color: var(--text-color);
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .about-title-comand {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 
-.comand-list-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .comand-list-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comand-list-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .comand-block {
@@ -771,15 +805,25 @@ ul {
 }
 
 .comand-list {
-  margin-right: 30px;
-  width: 270px;
+  margin-bottom: 30px;
+  max-width: 450px;
+  height: 622px;
   background: var(--general-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.comand-list:nth-child(4n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .comand-list {
+    max-width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comand-list {
+    max-width: 270px;
+    height: 428px;
+  }
 }
 
 .socials {
