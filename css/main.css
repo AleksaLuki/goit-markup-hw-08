@@ -807,7 +807,6 @@ ul {
 .comand-list {
   margin-bottom: 30px;
   max-width: 450px;
-  height: 622px;
   background: var(--general-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -816,13 +815,11 @@ ul {
 @media screen and (min-width: 768px) {
   .comand-list {
     max-width: 354px;
-    height: 536px;
   }
 }
 @media screen and (min-width: 1200px) {
   .comand-list {
     max-width: 270px;
-    height: 428px;
   }
 }
 
@@ -1104,8 +1101,17 @@ address {
   }
 }
 
-.socials {
+.footer-socials {
   margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-social-link {
