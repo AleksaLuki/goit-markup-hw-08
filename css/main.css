@@ -815,11 +815,13 @@ ul {
 @media screen and (min-width: 768px) {
   .comand-list {
     max-width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .comand-list {
     max-width: 270px;
+    margin-bottom: 0;
   }
 }
 
@@ -1641,8 +1643,10 @@ address {
           box-sizing: border-box;
   background: var(--general-color);
 }
-.card-list:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .card-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .card-list {
