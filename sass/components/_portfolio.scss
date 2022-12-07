@@ -1,14 +1,33 @@
 .portfolio {
-  @include container;
+  // @include container;
   
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   .button-btn {
     display: flex;
+    
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: start;
+    row-gap: 15px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+
   }
   
   .list-btn {

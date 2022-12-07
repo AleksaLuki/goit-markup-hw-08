@@ -65,6 +65,15 @@
             </li>
           </ul>
         </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -92,12 +101,57 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo1.jpg"
-                    alt="photo1"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo1_l@1x.webp 1x,
+                        ./images/photo1_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo1_l@1x.jpg 1x,
+                        ./images/photo1_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo1_m@1x.webp 1x,
+                        ./images/photo1_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo1_m@1x.jpg 1x,
+                      ./images/photo1_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo1_s@1x.webp 1x,
+                        ./images/photo1_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo1_s@1x.jpg 1x,
+                      ./images/photo1_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo1.jpg"
+                      alt="photo1"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -116,12 +170,56 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo2.jpg"
-                    alt="photo2"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo2_l@1x.webp 1x,
+                        ./images/photo2_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo2_l@1x.jpg 1x,
+                        ./images/photo2_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo2_m@1x.webp 1x,
+                        ./images/photo2_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo2_m@1x.jpg 1x,
+                      ./images/photo2_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo2_s@1x.webp 1x,
+                        ./images/photo2_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo2_s@1x.jpg 1x,
+                      ./images/photo2_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo2.jpg"
+                      alt="photo2"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -140,12 +238,56 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo3.jpg"
-                    alt="photo3"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo3_l@1x.webp 1x,
+                        ./images/photo3_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo3_l@1x.jpg 1x,
+                        ./images/photo3_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo3_m@1x.webp 1x,
+                        ./images/photo3_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo3_m@1x.jpg 1x,
+                      ./images/photo3_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo3_s@1x.webp 1x,
+                        ./images/photo3_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo3_s@1x.jpg 1x,
+                      ./images/photo3_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo3.jpg"
+                      alt="photo3"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -164,12 +306,56 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo4.jpg"
-                    alt="photo4"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo4_l@1x.webp 1x,
+                        ./images/photo4_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo4_l@1x.jpg 1x,
+                        ./images/photo4_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo4_m@1x.webp 1x,
+                        ./images/photo4_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo4_m@1x.jpg 1x,
+                      ./images/photo4_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo4_s@1x.webp 1x,
+                        ./images/photo4_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo4_s@1x.jpg 1x,
+                      ./images/photo4_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo4.jpg"
+                      alt="photo4"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -188,12 +374,56 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo5.jpg"
-                    alt="photo5"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo5_l@1x.webp 1x,
+                        ./images/photo5_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo5_l@1x.jpg 1x,
+                        ./images/photo5_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo5_m@1x.webp 1x,
+                        ./images/photo5_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo5_m@1x.jpg 1x,
+                      ./images/photo5_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo5_s@1x.webp 1x,
+                        ./images/photo5_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo5_s@1x.jpg 1x,
+                      ./images/photo5_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo5.jpg"
+                      alt="photo5"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -212,12 +442,56 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo6.jpg"
-                    alt="photo6"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo6_l@1x.webp 1x,
+                        ./images/photo6_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo6_l@1x.jpg 1x,
+                        ./images/photo6_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo6_m@1x.webp 1x,
+                        ./images/photo6_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo6_m@1x.jpg 1x,
+                      ./images/photo6_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo6_s@1x.webp 1x,
+                        ./images/photo6_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo6_s@1x.jpg 1x,
+                      ./images/photo6_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo6.jpg"
+                      alt="photo6"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -236,12 +510,56 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo7.jpg"
-                    alt="photo7"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo7_l@1x.webp 1x,
+                        ./images/photo7_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo7_l@1x.jpg 1x,
+                        ./images/photo7_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo7_m@1x.webp 1x,
+                        ./images/photo7_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo7_m@1x.jpg 1x,
+                      ./images/photo7_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo7_s@1x.webp 1x,
+                        ./images/photo7_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo7_s@1x.jpg 1x,
+                      ./images/photo7_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo7.jpg"
+                      alt="photo7"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -260,12 +578,56 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo8.jpg"
-                    alt="photo8"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo8_l@1x.webp 1x,
+                        ./images/photo8_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo8_l@1x.jpg 1x,
+                        ./images/photo8_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo8_m@1x.webp 1x,
+                        ./images/photo8_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo8_m@1x.jpg 1x,
+                      ./images/photo8_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo8_s@1x.webp 1x,
+                        ./images/photo8_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo8_s@1x.jpg 1x,
+                      ./images/photo8_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo8.jpg"
+                      alt="photo8"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -284,12 +646,56 @@
             <li class="card-list">
               <a class="card-link link" href="">
                 <div class="card-thumb">
-                  <img
-                    src="./images/photo9.jpg"
-                    alt="photo9"
-                    width="370"
-                    height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo9_l@1x.webp 1x,
+                        ./images/photo9_l@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/photo9_l@1x.jpg 1x,
+                        ./images/photo9_l@2x.jpg 2x
+                      " type="images/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/photo9_m@1x.webp 1x,
+                        ./images/photo9_m@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo9_m@1x.jpg 1x,
+                      ./images/photo9_m@2x.jpg 2x
+                    " type="images/jpg"
                   />
+                    <source
+                      media="(min-width: 767px)"
+                      srcset="
+                        ./images/photo9_s@1x.webp 1x,
+                        ./images/photo9_s@2x.webp 2x
+                      " type="images/webp"
+                    />
+                    <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/photo9_s@1x.jpg 1x,
+                      ./images/photo9_s@2x.jpg 2x
+                    " type="images/jpg"
+                  />
+                    <img
+                      src="./images/photo9.jpg"
+                      alt="photo9"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="card-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -311,80 +717,89 @@
     </main>
     <footer class="page-footer">
       <div class="container footer-block">
-        <div class="footer-nav">
-          <a href="./index.html" class="logo-footer"
-            ><span class="first-part">Web</span
-            ><span class="last-part-footer">Studio</span></a
-          >
-          <address>
-            <ul class="footer-list">
-              <li class="footer-item">
-                <a
-                  class="footer-address link"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer-container-wrapper">
+          <div class="footer-nav">
+            <a href="./index.html" class="logo-footer"
+              ><span class="first-part">Web</span
+              ><span class="last-part-footer">Studio</span></a
+            >
+            <address>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a
+                    class="footer-address link"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a class="mail-address link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a class="footer-tel-link link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-icon">
+            <p class="block-text">приєднуйтесь</p>
+            <ul class="footer-socials">
+              <li class="footer-socials-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-item">
-                <a class="mail-address link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="footer-socials-item">
+                <a class="footer-social-link link" href="">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-item">
-                <a class="footer-tel-link link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer-socials-item">
+                <a class="footer-social-link link" href="">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a class="footer-social-link link" href="">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="contsiner footer-icon">
-          <p class="block-text">приєднуйтесь</p>
-          <ul class="socials">
-            <li class="footer-socials-item">
-              <a class="footer-social-link" href="">
-                <svg class="footer-socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-item">
-              <a class="footer-social-link link" href="">
-                <svg class="footer-socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-item">
-              <a class="footer-social-link link" href="">
-                <svg class="footer-socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-item">
-              <a class="footer-social-link link" href="">
-                <svg class="footer-socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-form">
           <p class="footer-form-text">Підпишіться на розсилку</p>
           <form class="footer-form-block">
             <label class="footer-form-field">
-              <input class="footer-form-input" type="mail" name="mail" placeholder="E-mail">
+              <input
+                class="footer-form-input"
+                type="mail"
+                name="mail"
+                placeholder="E-mail"
+              />
             </label>
-            <button class="footer-form-btn" type="submit">Підписатися
+            <button class="footer-form-btn" type="submit">
+              Підписатися
               <svg class="footer-form-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
+                <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
+        </div>
       </div>
     </footer>
   </body>
