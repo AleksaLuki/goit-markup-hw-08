@@ -901,6 +901,12 @@ ul {
   padding-left: 0;
   padding-right: 0;
 }
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .clients-title {
   margin-bottom: 30px;
@@ -1051,7 +1057,7 @@ ul {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
 }
 
@@ -1074,6 +1080,11 @@ address {
 
 .footer-nav {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-nav {
