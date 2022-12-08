@@ -35,10 +35,12 @@
     }
   }
   .footer-container-wrapper {
-    
+    margin-bottom: 60px;
+
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-around;
+      margin-bottom: 0;
      
     }
   }
@@ -56,8 +58,12 @@
   .footer-item:not(:last-child) {
     margin-bottom: 9px;
   }
-  .footer-list {
+  .footer-nav {
     margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
  
   .footer-address {
@@ -110,7 +116,7 @@
 
   }
   .footer-socials {
-    margin-bottom: 60px;
+    
       display: flex;
       justify-content: center;
       gap: 10px;
